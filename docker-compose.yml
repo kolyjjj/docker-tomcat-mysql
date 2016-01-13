@@ -1,6 +1,11 @@
 web:
   build: .
-  
+  container_name: my_tomcat
+  links:
+    - db:mysql
+  ports:
+    - 80:80
+    - 8080:8080
 
 db:
   build: ./mysql
