@@ -1,0 +1,7 @@
+web:
+  build: .
+  
+
+db:
+  build: ./mysql
+  container_name: my_db
